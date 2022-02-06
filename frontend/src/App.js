@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import Form from './components/Form';
 import FilterButton from './components/FilterButton';
 import Todo from './components/Todo';
@@ -82,7 +82,7 @@ function App(props) {
   
   
 
-  const tasksNoun = taskList.length !== 1 ? 'tasks' : 'task';
+  const tasksNoun = taskList.length !== 1 ? 'goals' : 'goal';
   const headingText = `${taskList.length} ${tasksNoun} remaining`;
   
 

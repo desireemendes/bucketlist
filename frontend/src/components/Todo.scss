@@ -85,6 +85,10 @@ body {
   border: 2px solid #000;
 }
 
+input#new-todo-input {
+  width: 90%;
+} 
+
 [class*="__lg"] {
   display: inline-block;
   width: 100%;
