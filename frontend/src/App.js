@@ -5,6 +5,7 @@ import Todo from './components/Todo';
 import { useState } from 'react';
 import { nanoid } from "nanoid";
 import Header from './components/Header';
+import Map from './components/Map';
 
 const FILTER_MAP = {
   All: () => true,
@@ -102,7 +103,11 @@ function App(props) {
       >
         {taskList}
       </ul>
+      <section>
+      <Map />
+      </section>
     </div>
+    
   );
 }
 
