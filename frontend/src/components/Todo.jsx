@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./Todo.scss"
 
 export default function Todo(props) {
   const [isEditing, setEditing] = useState(false);
