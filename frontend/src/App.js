@@ -1,10 +1,11 @@
-import './App.css';
+import './App.scss';
 import Form from './components/Form';
 import FilterButton from './components/FilterButton';
 import Todo from './components/Todo';
 import { useState } from 'react';
 import { nanoid } from "nanoid";
 import Header from './components/Header';
+import Map from './components/Map';
 
 const FILTER_MAP = {
   All: () => true,
@@ -81,7 +82,7 @@ function App(props) {
   
   
 
-  const tasksNoun = taskList.length !== 1 ? 'tasks' : 'task';
+  const tasksNoun = taskList.length !== 1 ? 'goals' : 'goal';
   const headingText = `${taskList.length} ${tasksNoun} remaining`;
   
 
@@ -102,7 +103,17 @@ function App(props) {
       >
         {taskList}
       </ul>
+      <div className="map-description">
+        <p>
+       Pin your bucket list locations on the map!
+       Click on the pin to display date and time item was pinned!
+        </p>
+      </div>
+      <section>
+      <Map />
+      </section>
     </div>
+    
   );
 }
 

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./Todo.scss"
 
 export default function Todo(props) {
   const [isEditing, setEditing] = useState(false);
@@ -63,9 +64,9 @@ export default function Todo(props) {
         </label>
       </div>
       <div className="btn-group">
-        <button type="button" className="btn" onClick={() => setEditing(true)}>
+        {/* <button type="button" className="btn" onClick={() => setEditing(true)}>
           Edit <span className="visually-hidden">{props.name}</span>
-        </button>
+        </button> */}
 
         <button
           type="button"
@@ -93,9 +94,9 @@ export default function Todo(props) {
         </label>
       </div>
       <div className="btn-group">
-        <button type="button" className="btn">
+        {/* <button type="button" className="btn">
           Edit <span className="visually-hidden">{props.name}</span>
-        </button>
+        </button> */}
         <button
           type="button"
           className="btn btn__danger"
