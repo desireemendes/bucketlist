@@ -1,8 +1,13 @@
 header {
-  background-color: black;
+  background-color: #001d3d;
   margin: auto -16px;
   padding: 16px 32px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+
   h1 {
     color: #fff;
     font-family: 'Roboto Slab', serif;

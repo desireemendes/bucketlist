@@ -103,6 +103,12 @@ function App(props) {
       >
         {taskList}
       </ul>
+      <div className="map-description">
+        <p>
+       Pin your bucket list locations on the map!
+       Click on the pin to display date and time item was pinned!
+        </p>
+      </div>
       <section>
       <Map />
       </section>

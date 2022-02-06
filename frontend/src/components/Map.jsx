@@ -23,8 +23,8 @@ import "./Map.scss"
 
 const libraries = ["places"];
 const mapContainerStyle = {
-  width: "100vw",
-  height: "100vh",
+  width: "80vw",
+  height: "80vh",
 };
 const center = {
   lat: 43.653225,
