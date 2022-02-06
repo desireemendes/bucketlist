@@ -5,6 +5,7 @@ import {
   InfoWindow,
 } from "@react-google-maps/api";
 import { formatRelative } from "date-fns";
+import mapStyles from "./mapStyles"
 
 const libraries = ["places"];
 const mapContainerStyle = {
@@ -15,6 +16,9 @@ const center = {
   lat: 43.653225,
   lng: -79.383186,
 };
+const options = {
+  styles: mapStyles,
+}
 
 function Map() {
   const { isLoaded, loadError } = useLoadScript({
@@ -30,6 +34,7 @@ function Map() {
         mapContainerStyle={mapContainerStyle}
         zoom={8}
         center={center}
+        options={options}
       ></GoogleMap>
     </div>
   );
